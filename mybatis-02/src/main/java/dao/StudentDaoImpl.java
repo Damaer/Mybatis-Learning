@@ -17,7 +17,7 @@ public class StudentDaoImpl implements IStudentDao {
 			inputStream = Resources.getResourceAsStream("mybatis.xml");
 			SqlSessionFactory sqlSessionFactory=new SqlSessionFactoryBuilder().build(inputStream);
 			sqlSession=sqlSessionFactory.openSession();
-			sqlSession.insert("insertStudent",student);
+			sqlSession.insert("mapper1.insertStudent",student);
 			sqlSession.commit();
 		} catch (IOException e) {
 			e.printStackTrace();
