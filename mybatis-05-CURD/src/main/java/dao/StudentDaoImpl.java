@@ -12,6 +12,7 @@ import java.util.Map;
 public class StudentDaoImpl implements IStudentDao {
     private SqlSession sqlSession;
     public void insertStudent(Student student) {
+        int result;
         //加载主配置文件
         try {
             sqlSession = MyBatisUtils.getSqlSession();
@@ -21,19 +22,33 @@ public class StudentDaoImpl implements IStudentDao {
             if (sqlSession != null) {
                 sqlSession.close();
             }
+
         }
     }
+    public void  insertStudentCacheIdNoReturn(Student student) {
 
-    public void insertStudentCacheId(Student student) {
         try {
             sqlSession = MyBatisUtils.getSqlSession();
-            sqlSession.insert("insertStudentCacheId", student);
+            sqlSession.insert("insertStudentCacheIdNoReturn", student);
             sqlSession.commit();
         } finally {
             if (sqlSession != null) {
                 sqlSession.close();
             }
         }
+    }
+    public int  insertStudentCacheId(Student student) {
+        int result;
+        try {
+            sqlSession = MyBatisUtils.getSqlSession();
+            result =sqlSession.insert("insertStudentCacheId", student);
+            sqlSession.commit();
+        } finally {
+            if (sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+        return result;
     }
 
     public void deleteStudentById(int id) {

@@ -29,10 +29,21 @@ public class MyTest {
      * 测试插入后获取id
      */
     @Test
-    public void testinsertStudentCacheId(){
-        Student student=new Student("helloworld",17,85);
+    public void testinsertStudentCacheIdNoReturn(){
+        Student student=new Student("helloworld",17,101);
         System.out.println("插入前：student="+student);
-        dao.insertStudentCacheId(student);
+        dao.insertStudentCacheIdNoReturn(student);
+        System.out.println("插入后：student="+student);
+    }
+    /**
+     * 测试插入后获取id
+     */
+    @Test
+    public void testinsertStudentCacheId(){
+        Student student=new Student("helloworld",17,101);
+        System.out.println("插入前：student="+student);
+        int result = dao.insertStudentCacheId(student);
+        System.out.println(result);
         System.out.println("插入后：student="+student);
     }
     /*
