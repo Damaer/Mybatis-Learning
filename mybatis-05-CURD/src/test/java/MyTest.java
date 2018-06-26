@@ -43,7 +43,7 @@ public class MyTest {
         Student student=new Student("helloworld",17,101);
         System.out.println("插入前：student="+student);
         int result = dao.insertStudentCacheId(student);
-        System.out.println(result);
+        System.out.println("result:"+result);
         System.out.println("插入后：student="+student);
     }
     /*
@@ -52,7 +52,7 @@ public class MyTest {
      */
     @Test
     public void testdeleteStudentById(){
-        dao.deleteStudentById(18);
+        dao.deleteStudentById(5);
 
     }
     /*
@@ -96,7 +96,7 @@ public class MyTest {
      */
     @Test
     public void testselectStudentById(){
-        Student student=dao.selectStudentById(19);
+        Student student=dao.selectStudentById(1);
         System.out.println(student);
     }
     /*

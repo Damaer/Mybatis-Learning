@@ -4,6 +4,18 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="abc">
     <!-- parameterType可以省略不写 -->
+    <!--下面是字符串拼接的方式-->
+    <!--<insert id="insertStudent" parameterType="Student">
+            insert into student(name,age,score) values('${name}',${age},${score})
+        </insert>
+        <insert id="insertStudentCacheIdNoReturn" parameterType="Student">
+            insert into student(name,age,score) values(${name},${age},${score})
+            &lt;!&ndash; 指定结果类型resultType，keyProperty是属性，自动返回到属性id中，order是次序，after是指获取id是在于插入后 &ndash;&gt;
+            <selectKey resultType="int" keyProperty="id" order="AFTER">
+                select LAST_INSERT_ID()
+            </selectKey>
+        </insert>-->
+
     <insert id="insertStudent" parameterType="Student">
 		insert into student(name,age,score) values(#{name},#{age},#{score})
 	</insert>
@@ -25,7 +37,7 @@
     </insert>
 
     <!-- 删除 -->
-    <delete id="deleteStudentById" >
+    <delete id="deleteStudentById">
         delete from student where id=#{id}
         <!-- 这里的id放什么都可以，只是一个占位符，不表示什么 -->
     </delete>
@@ -43,8 +55,7 @@
     </select>
     <!-- 通过id来查询学生 -->
     <select id="selectStudentById" resultType="Student">
-		select * from student where id=#{xxx}
-
+		select * from student where id=${value}
 	</select>
     <!-- 模糊查询-->
     <!-- 不能写成'%#{name}%' -->
