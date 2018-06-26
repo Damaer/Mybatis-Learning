@@ -1,0 +1,32 @@
+
+V
+squid:S106N"9Replace this use of System.out or System.err by a logger.(„íí8ÓãùÑÃ,
+[
+squid:S106Z"9Replace this use of System.out or System.err by a logger.(¥™Ëøÿÿÿÿ8ÓãùÑÃ,
+ssquid:S1192"UDefine a constant instead of duplicating this literal "æ’å…¥å‰ï¼šstudent=" 3 times.(²ÖäÇ8ÓãùÑÃ,
+\squid:S1155L">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8ÓãùÑÃ,
+V
+squid:S106""9Replace this use of System.out or System.err by a logger.(²ÖäÇ8ÓãùÑÃ,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(²ÖäÇ8ÓãùÑÃ,
+[
+squid:S106$"9Replace this use of System.out or System.err by a logger.(¢±¦øÿÿÿÿ8ÓãùÑÃ,
+[
+squid:S106["9Replace this use of System.out or System.err by a logger.(Ÿ³ùÉıÿÿÿÿ8ÓãùÑÃ,
+V
+squid:S106o"9Replace this use of System.out or System.err by a logger.(„íí8ÓãùÑÃ,
+msquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’øŠ¬8ÓãùÑÃ,
+xsquid:S1192"UDefine a constant instead of duplicating this literal "æ’å…¥åï¼šstudent=" 3 times.(¢±¦øÿÿÿÿ8ÓãùÑÃ,
+\squid:S1155m">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8ÓãùÑÃ,
+V
+squid:S106,"9Replace this use of System.out or System.err by a logger.(²ÖäÇ8ÓãùÑÃ,
+[
+squid:S106."9Replace this use of System.out or System.err by a logger.(Š•éùÿÿÿÿ8ÓãùÑÃ,
+[
+squid:S106/"9Replace this use of System.out or System.err by a logger.(¢±¦øÿÿÿÿ8ÓãùÑÃ,
+nsquid:S1192!"KDefine a constant instead of duplicating this literal "helloworld" 3 times.(éé˜éùÿÿÿÿ8ÓãùÑÃ,
+V
+squid:S106d"9Replace this use of System.out or System.err by a logger.(„íí8ÓãùÑÃ,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢±¦øÿÿÿÿ8ÓãùÑÃ,
+8squid:S1220""Move this file to a named package.8ÓãùÑÃ,
