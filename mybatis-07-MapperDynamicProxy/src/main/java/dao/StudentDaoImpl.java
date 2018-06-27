@@ -12,7 +12,6 @@ import java.util.Map;
 public class StudentDaoImpl implements IStudentDao {
     private SqlSession sqlSession;
     public void insertStudent(Student student) {
-        int result;
         //加载主配置文件
         try {
             sqlSession = MyBatisUtils.getSqlSession();
