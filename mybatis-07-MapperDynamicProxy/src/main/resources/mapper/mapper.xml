@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="abc">
+    <!-- parameterType可以省略不写 -->
+    <!--下面是字符串拼接的方式-->
+    <!--<insert id="insertStudent" parameterType="Student">
+            insert into student(name,age,score) values('${name}',${age},${score})
+        </insert>
+        <insert id="insertStudentCacheIdNoReturn" parameterType="Student">
+            insert into student(name,age,score) values(${name},${age},${score})
+            &lt;!&ndash; 指定结果类型resultType，keyProperty是属性，自动返回到属性id中，order是次序，after是指获取id是在于插入后 &ndash;&gt;
+            <selectKey resultType="int" keyProperty="id" order="AFTER">
+                select LAST_INSERT_ID()
+            </selectKey>
+        </insert>-->
+
+    <insert id="insertStudent" parameterType="Student">
+		insert into student(name,age,score) values(#{name},#{age},#{score})
+	</insert>
+
+    <insert id="insertStudentCacheIdNoReturn" parameterType="Student">
+        insert into student(name,age,score) values(#{name},#{age},#{score})
+        <!-- 指定结果类型resultType，keyProperty是属性，自动返回到属性id中，order是次序，after是指获取id是在于插入后 -->
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <insert id="insertStudentCacheId" parameterType="Student">
+        insert into student(name,age,score) values(#{name},#{age},#{score})
+        <!-- 指定结果类型resultType，keyProperty是属性，自动返回到属性id中，order是次序，after是指获取id是在于插入后 -->
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <!-- 删除 -->
+    <delete id="deleteStudentById">
+        delete from student where id=#{id}
+        <!-- 这里的id放什么都可以，只是一个占位符，不表示什么 -->
+    </delete>
+
+    <update id="updateStudent">
+		update student set name=#{name},age=#{age},score=#{score} where id=#{id}
+	</update>
+
+    <!-- 查询列表 -->
+    <!-- 系统不知道返回封装为什么类型，所以要注明返回类型 -->
+    <select id="selectAllStudents" resultType="Student">
+        select id,name,age,score from student
+        <!-- 如果数据库为tid，tname，tage，那么我们可以使用别名
+        select tid id,tname name,tage age,tscore score from student -->
+    </select>
+    <!-- 通过id来查询学生 -->
+    <select id="selectStudentById" resultType="Student">
+		select * from student where id=${value}
+	</select>
+    <!-- 模糊查询-->
+    <!-- 不能写成'%#{name}%' -->
+    <!-- 可以写成这样，也就是使函数拼接 select id,name,age,score from student where name like concat('%',#{xxx},'%') -->
+    <!-- 也可以写成这样，‘’引起来的是写死的，而变量是不可以引起来的select id,name,age,score from student where name like '%' #{xxx} '%' -->
+    <!-- '%' #{xxx} '%'中间必须有空格，要不就无效了 -->
+    <select id="selectStudentsByName" resultType="Student">
+        <!--最常用的（动态参数） select id,name,age,score from student where name like '%' #{name} '%' -->
+        <!-- 下面的是字符串拼接 ，只能写value，了解即可，容易sql注入，执行效率低，不建议使用-->
+        select id,name,age,score from student where name like '%${value}%'
+    </select>
+</mapper>
