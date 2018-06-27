@@ -6,7 +6,9 @@ public interface IStudentDao {
     // 增加学生
     public void insertStudent(Student student);
     // 增加新学生并返回id
-    public void insertStudentCacheId(Student student);
+    public void insertStudentCacheIdNoReturn(Student student);
+    // 增加新学生并返回id返回result
+    public int insertStudentCacheId(Student student);
 
     // 根据id删除学生
     public void deleteStudentById(int id);

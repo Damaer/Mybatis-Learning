@@ -29,10 +29,21 @@ public class MyTest {
      * 测试插入后获取id
      */
     @Test
-    public void testinsertStudentCacheId(){
-        Student student=new Student("helloworld",17,85);
+    public void testinsertStudentCacheIdNoReturn(){
+        Student student=new Student("helloworld",17,101);
         System.out.println("插入前：student="+student);
-        dao.insertStudentCacheId(student);
+        dao.insertStudentCacheIdNoReturn(student);
+        System.out.println("插入后：student="+student);
+    }
+    /**
+     * 测试插入后获取id
+     */
+    @Test
+    public void testinsertStudentCacheId(){
+        Student student=new Student("helloworld",17,101);
+        System.out.println("插入前：student="+student);
+        int result = dao.insertStudentCacheId(student);
+        System.out.println("result:"+result);
         System.out.println("插入后：student="+student);
     }
     /*
@@ -41,7 +52,7 @@ public class MyTest {
      */
     @Test
     public void testdeleteStudentById(){
-        dao.deleteStudentById(18);
+        dao.deleteStudentById(5);
 
     }
     /*
@@ -85,7 +96,7 @@ public class MyTest {
      */
     @Test
     public void testselectStudentById(){
-        Student student=dao.selectStudentById(19);
+        Student student=dao.selectStudentById(1);
         System.out.println(student);
     }
     /*
