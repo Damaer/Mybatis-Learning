@@ -1,18 +1,28 @@
 import bean.Student;
 import dao.IStudentDao;
-import dao.StudentDaoImpl;
+import org.apache.ibatis.session.SqlSession;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import utils.MyBatisUtils;
 
 import java.util.List;
 import java.util.Map;
 
 public class MyTest {
 	private IStudentDao dao;
+    private SqlSession sqlSession;
 	@Before
 	public void Before(){
-		dao=new StudentDaoImpl();
+        sqlSession=MyBatisUtils.getSqlSession();
+        dao=sqlSession.getMapper(IStudentDao.class);
 	}
+    @After
+    public void after(){
+        if(sqlSession!=null){
+            sqlSession.close();
+        }
+    }
     /**
      * 插入测试
      */
@@ -25,6 +35,7 @@ public class MyTest {
         System.out.println("插入前：student="+student);
         dao.insertStudent(student);
         System.out.println("插入后：student="+student);
+        sqlSession.commit();
     }
     /**
      * 测试插入后获取id
@@ -35,6 +46,7 @@ public class MyTest {
         System.out.println("插入前：student="+student);
         dao.insertStudentCacheIdNoReturn(student);
         System.out.println("插入后：student="+student);
+        sqlSession.commit();
     }
     /**
      * 测试插入后获取id
@@ -46,6 +58,7 @@ public class MyTest {
         int result = dao.insertStudentCacheId(student);
         System.out.println("result:"+result);
         System.out.println("插入后：student="+student);
+        sqlSession.commit();
     }
     /*
      * 测试删除
@@ -54,6 +67,7 @@ public class MyTest {
     @Test
     public void testdeleteStudentById(){
         dao.deleteStudentById(5);
+        sqlSession.commit();
 
     }
     /*
@@ -65,7 +79,7 @@ public class MyTest {
         Student student=new Student("lallalalla",14,94.6);
         student.setId(21);
         dao.updateStudent(student);
-
+        sqlSession.commit();
     }
     /*
      * 查询列表
@@ -79,17 +93,6 @@ public class MyTest {
                 System.out.println(student);
             }
         }
-    }
-    /*
-     * 查询列表装成map
-     *
-     */
-    @Test
-    public void testselectMap(){
-        Map<String,Object> students=dao.selectAllStudentsMap();
-        // 有相同的名字的会直接替换掉之前查出来的，因为是同一个key
-        System.out.println(students.get("helloworld"));
-        System.out.println(students.get("1ADAS"));
     }
     /*
      * 通过id来查询student

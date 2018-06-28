@@ -20,8 +20,6 @@ public interface IStudentDao {
 
     // 返回所有学生的信息List
     public List<Student> selectAllStudents();
-    // 返回所有学生的信息Map
-    public Map<String, Object> selectAllStudentsMap();
 
     // 根据id查找学生
     public Student selectStudentById(int id);
