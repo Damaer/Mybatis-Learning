@@ -22,7 +22,7 @@
 增删改查之后，需要返回执行是否成功的结果，这也是一个比较实际的应用，mybatis执行之后返回的是影响的行数。
 #### **8.[（八）Mybatis返回List或者Map以及模糊查询](https://github.com/Damaer/Mybatis-Learning/blob/master/Markdown%E6%96%87%E6%A1%A3/%EF%BC%88%E5%85%AB%EF%BC%89Mybatis%E8%BF%94%E5%9B%9EList%E6%88%96%E8%80%85Map%E4%BB%A5%E5%8F%8A%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2.md)**<br>
 Mybatis查询结果使用lsit或者map返回，其实map在里面也是调用了返回list，再对结果进行处理的。
-#### **7.[（七）Mybatis如何知道增删改是否成功执行](https://github.com/Damaer/Mybatis-Learning/blob/master/Markdown%E6%96%87%E6%A1%A3/%EF%BC%88%E4%B8%83%EF%BC%89Mybatis%E5%A6%82%E4%BD%95%E7%9F%A5%E9%81%93%E5%A2%9E%E5%88%A0%E6%94%B9%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F%E6%89%A7%E8%A1%8C.md)**<br>
-增删改查之后，需要返回执行是否成功的结果，这也是一个比较实际的应用，mybatis执行之后返回的是影响的行数。
-#### **7.[（七）Mybatis如何知道增删改是否成功执行](https://github.com/Damaer/Mybatis-Learning/blob/master/Markdown%E6%96%87%E6%A1%A3/%EF%BC%88%E4%B8%83%EF%BC%89Mybatis%E5%A6%82%E4%BD%95%E7%9F%A5%E9%81%93%E5%A2%9E%E5%88%A0%E6%94%B9%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F%E6%89%A7%E8%A1%8C.md)**<br>
-增删改查之后，需要返回执行是否成功的结果，这也是一个比较实际的应用，mybatis执行之后返回的是影响的行数。
+#### **9.[（九）Mybatis的#{}占位符和${}拼接符的区别](https://github.com/Damaer/Mybatis-Learning/blob/master/Markdown%E6%96%87%E6%A1%A3/%EF%BC%88%E4%B9%9D%EF%BC%89Mybatis%E7%9A%84%23%7B%7D%E5%8D%A0%E4%BD%8D%E7%AC%A6%E5%92%8C%24%7B%7D%E6%8B%BC%E6%8E%A5%E7%AC%A6%E7%9A%84%E5%8C%BA%E5%88%AB.md)**<br>
+占位符大部分时候是安全的，使用拼接符号是不安全的，但是我们有时候使用占位符是无法实现功能的，所以必须使用拼接，这个时候就需要自己过滤非法的输入。
+#### **10.[（十）Mybatis属性名与查询字段名不相同](https://github.com/Damaer/Mybatis-Learning/blob/master/Markdown%E6%96%87%E6%A1%A3/%EF%BC%88%E5%8D%81%EF%BC%89Mybatis%E5%B1%9E%E6%80%A7%E5%90%8D%E4%B8%8E%E6%9F%A5%E8%AF%A2%E5%AD%97%E6%AE%B5%E5%90%8D%E4%B8%8D%E7%9B%B8%E5%90%8C.md)**<br>
+当mybatis的属性名与查询出来的字段名不一致的时候，我们有两种做法，一种是在SQL里面直接使用别名，一种的自己定义映射关系ResultMap。
