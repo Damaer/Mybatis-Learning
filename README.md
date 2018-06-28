@@ -18,3 +18,11 @@
 完整的增删改查的demo。
 #### **6.[（六）Mybatis插入数据返回主键id](https://github.com/Damaer/Mybatis-Learning/blob/master/Markdown%E6%96%87%E6%A1%A3/%EF%BC%88%E5%85%AD%EF%BC%89Mybatis%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE%E8%BF%94%E5%9B%9E%E4%B8%BB%E9%94%AEid.md)**<br>
 如何在插入数据后返回主键id信息，这个在实际开发中比较多见。
+#### **7.[（七）Mybatis如何知道增删改是否成功执行](https://github.com/Damaer/Mybatis-Learning/blob/master/Markdown%E6%96%87%E6%A1%A3/%EF%BC%88%E4%B8%83%EF%BC%89Mybatis%E5%A6%82%E4%BD%95%E7%9F%A5%E9%81%93%E5%A2%9E%E5%88%A0%E6%94%B9%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F%E6%89%A7%E8%A1%8C.md)**<br>
+增删改查之后，需要返回执行是否成功的结果，这也是一个比较实际的应用，mybatis执行之后返回的是影响的行数。
+#### **8.[（八）Mybatis返回List或者Map以及模糊查询](https://github.com/Damaer/Mybatis-Learning/blob/master/Markdown%E6%96%87%E6%A1%A3/%EF%BC%88%E5%85%AB%EF%BC%89Mybatis%E8%BF%94%E5%9B%9EList%E6%88%96%E8%80%85Map%E4%BB%A5%E5%8F%8A%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2.md)**<br>
+Mybatis查询结果使用lsit或者map返回，其实map在里面也是调用了返回list，再对结果进行处理的。
+#### **7.[（七）Mybatis如何知道增删改是否成功执行](https://github.com/Damaer/Mybatis-Learning/blob/master/Markdown%E6%96%87%E6%A1%A3/%EF%BC%88%E4%B8%83%EF%BC%89Mybatis%E5%A6%82%E4%BD%95%E7%9F%A5%E9%81%93%E5%A2%9E%E5%88%A0%E6%94%B9%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F%E6%89%A7%E8%A1%8C.md)**<br>
+增删改查之后，需要返回执行是否成功的结果，这也是一个比较实际的应用，mybatis执行之后返回的是影响的行数。
+#### **7.[（七）Mybatis如何知道增删改是否成功执行](https://github.com/Damaer/Mybatis-Learning/blob/master/Markdown%E6%96%87%E6%A1%A3/%EF%BC%88%E4%B8%83%EF%BC%89Mybatis%E5%A6%82%E4%BD%95%E7%9F%A5%E9%81%93%E5%A2%9E%E5%88%A0%E6%94%B9%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F%E6%89%A7%E8%A1%8C.md)**<br>
+增删改查之后，需要返回执行是否成功的结果，这也是一个比较实际的应用，mybatis执行之后返回的是影响的行数。
