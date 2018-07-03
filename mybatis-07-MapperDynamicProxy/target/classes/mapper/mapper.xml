@@ -3,19 +3,6 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="dao.IStudentDao">
-    <!-- parameterType可以省略不写 -->
-    <!--下面是字符串拼接的方式-->
-    <!--<insert id="insertStudent" parameterType="Student">
-            insert into student(name,age,score) values('${name}',${age},${score})
-        </insert>
-        <insert id="insertStudentCacheIdNoReturn" parameterType="Student">
-            insert into student(name,age,score) values(${name},${age},${score})
-            &lt;!&ndash; 指定结果类型resultType，keyProperty是属性，自动返回到属性id中，order是次序，after是指获取id是在于插入后 &ndash;&gt;
-            <selectKey resultType="int" keyProperty="id" order="AFTER">
-                select LAST_INSERT_ID()
-            </selectKey>
-        </insert>-->
-
     <insert id="insertStudent" parameterType="Student">
 		insert into student(name,age,score) values(#{name},#{age},#{score})
 	</insert>

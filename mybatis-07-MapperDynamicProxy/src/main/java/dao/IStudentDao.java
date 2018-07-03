@@ -3,8 +3,6 @@ package dao;
 import bean.Student;
 
 import java.util.List;
-import java.util.Map;
-
 public interface IStudentDao {
     // 增加学生
     public void insertStudent(Student student);
