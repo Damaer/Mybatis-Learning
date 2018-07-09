@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.IStudentDao">
+    <!-- 接受多个参数 -->
+    <select id="selectStudentByNameAndAge" resultType="Student">
+        <!--最常用的（动态参数） select id,name,age,score from student where name like '%' #{name} '%' -->
+        <!-- 下面的是字符串拼接 ，只能写value，了解即可，容易sql注入，执行效率低，不建议使用-->
+        select id,name,age,score from student where name like '%' #{nameCon} '%' and age> #{ageCon}
+        and score>#{stu.score}
+    </select>
+
+
+    <!-- 接受多个参数 -->
+    <select id="selectStudentByNameAndAgeV2" resultType="Student">
+        select id,name,age,score from student where name like '%' #{0} '%' and age> #{1}
+    </select>
+</mapper>
