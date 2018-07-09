@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aphysia.dao.INewsLabelDao">
+	<resultMap type="NewsLabel" id="newsLabelMapper">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+		<association property="parent"
+						javaType="NewsLabel"
+						select="selectParentByParentId"
+						column="pid"/>
+	</resultMap>
+	<select id="selectParentByParentId" resultMap="newsLabelMapper">
+		select id,name,pid from newslabel where id=#{xxx}
+	</select>
+</mapper>
