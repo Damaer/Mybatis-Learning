@@ -47,7 +47,7 @@ public class MyTest {
   @Test
   public void testselectStudentByNameAndAgeV2(){
         Student stu=new Student("lallal", 1212, 40);
-        List<Student>students=dao.selectStudentByNameAndAgeV2("hello",14);
+        List<Student>students=dao.selectStudentByNameAndAgeV2("hello",13);
         if(students.size()>0){
             for(Student student:students)
                 System.out.println(student);
