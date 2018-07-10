@@ -24,7 +24,7 @@ public class MyTest {
   @Test
   public void testInsert() {
     /** 要是没有select id，这样是不会自动获取id的，id会一直为空 */
-    Student student = new Student("enasden", 21, 94.6);
+    Student student = new Student("sam", 11, 94.6);
     System.out.println("插入前：student=" + student);
     dao.insertStudent(student);
     System.out.println("插入后：student=" + student);
@@ -54,7 +54,7 @@ public class MyTest {
    */
   @Test
   public void testUpdate() {
-    Student student = new Student("lallalalla", 14, 94.6);
+    Student student = new Student("la67768la", 14, 94.6);
     student.setId(4);
     dao.updateStudent(student);
   }
@@ -135,7 +135,7 @@ public class MyTest {
 
   @Test
   public void testselectStudentByDynamicSQLWhere() {
-    Student student = new Student("", 0, 40.0);
+    Student student = new Student("hello", 14, 40.0);
     List<Student> students = dao.selectStudentByDynamicSQLWhere(student);
     if (students.size() > 0) {
       for (Student stu : students) System.out.println(stu);
@@ -146,7 +146,7 @@ public class MyTest {
   public void testselectStudentByDynamicSQLChoose() {
     // Student student=new Student("", 14, 40.0);
     // Student student=new Student("abc", 14, 40.0);
-    Student student = new Student("", 0, 40.0);
+    Student student = new Student("hello", 1, 40.0);
     List<Student> students = dao.selectStudentByDynamicSQLChoose(student);
     if (students.size() > 0) {
       for (Student stu : students) System.out.println(stu);

@@ -21,10 +21,19 @@
         delete from student where id=#{id}  <!-- 这里的id放什么都可以，只是一个占位符，不表示什么 -->
     </delete>
 
-    <update id="updateStudent">
+    <!--<update id="updateStudent">
 		update student set name=#{name},age=#{age},score=#{score} where id=#{id}
+	</update>-->
+    <update id="updateStudent">
+		update student
+		<set>
+            <!-- 第一个if标签的逗号一定要有，最后一个标签的逗号可以没有-->
+            <if test="name != null"> name=#{name},</if>
+            <if test="age != null">age=#{age},</if>
+            <if test="score != null"> score=#{score},</if>
+        </set>
+         where id=#{id}
 	</update>
-
     <!-- 查询列表 -->
     <!-- 系统不知道返回封装为什么类型，所以要注明返回类型 -->
     <select id="selectAllStudents" resultType="Student">
@@ -82,9 +91,9 @@
     </select>
     <!-- 动态sql -->
     <!-- &可以使用and来代替 ，注意！=需要连在一起写-->
-    <select id="selectStudentByDynamicSQLWhere" resultType="Student">
-        <!--最常用的（动态参数） select id,name,age,score from student where name like '%' #{name} '%' -->
-        <!-- 下面的是字符串拼接 ，只能写value，了解即可，容易sql注入，执行效率低，不建议使用-->
+    <!--<select id="selectStudentByDynamicSQLWhere" resultType="Student">
+        &lt;!&ndash;最常用的（动态参数） select id,name,age,score from student where name like '%' #{name} '%' &ndash;&gt;
+        &lt;!&ndash; 下面的是字符串拼接 ，只能写value，了解即可，容易sql注入，执行效率低，不建议使用&ndash;&gt;
         select id,name,age,score
         from student
         <where>
@@ -95,6 +104,20 @@
                 and age > #{age}
             </if>
         </where>
+    </select>-->
+    <select id="selectStudentByDynamicSQLWhere" resultType="Student">
+        <!--最常用的（动态参数） select id,name,age,score from student where name like '%' #{name} '%' -->
+        <!-- 下面的是字符串拼接 ，只能写value，了解即可，容易sql注入，执行效率低，不建议使用-->
+        select id,name,age,score
+        from student
+        <trim prefix="where" prefixOverrides="and">
+            <if test="name != null and name != ''">
+                and name like '%' #{name} '%'
+            </if>
+            <if test="age > 0">
+                and age > #{age}
+            </if>
+        </trim>
     </select>
     <!-- 	selectStudentByDynamicSQLChoose 类似于switch，满足后就不会判断后面的了-->
     <!-- 如果名字不为空，那么按照名字来查询，如果名字为空，就按照年龄来查询，如果没有查询条件，就没有查询条件 -->
