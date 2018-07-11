@@ -146,7 +146,7 @@ public class MyTest {
   public void testselectStudentByDynamicSQLChoose() {
     // Student student=new Student("", 14, 40.0);
     // Student student=new Student("abc", 14, 40.0);
-    Student student = new Student("hello", 1, 40.0);
+    Student student = new Student("hello", 14, 40.0);
     List<Student> students = dao.selectStudentByDynamicSQLChoose(student);
     if (students.size() > 0) {
       for (Student stu : students) System.out.println(stu);
