@@ -59,8 +59,8 @@
       <file leaf-file-name="mapper.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="169" column="32" lean-forward="true" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
+            <state relative-caret-position="203">
+              <caret line="172" column="23" lean-forward="true" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -101,9 +101,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-10" />
-    <option name="y" value="97" />
-    <option name="width" value="1696" />
+    <option name="x" value="187" />
+    <option name="y" value="229" />
+    <option name="width" value="1302" />
     <option name="height" value="1032" />
   </component>
   <component name="ProjectView">
@@ -362,7 +362,7 @@
       <option name="presentableId" value="Default" />
       <updated>1531183832272</updated>
       <workItem from="1531183835674" duration="432000" />
-      <workItem from="1531186061126" duration="14400000" />
+      <workItem from="1531186061126" duration="15358000" />
     </task>
     <servers />
   </component>
@@ -399,10 +399,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14832000" />
+    <option name="totallyTimeSpent" value="15790000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="97" width="1696" height="1032" extended-state="0" />
+    <frame x="187" y="229" width="1302" height="1032" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -420,7 +420,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1984127" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.261254" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -552,8 +552,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="169" column="32" lean-forward="true" selection-start-line="169" selection-start-column="32" selection-end-line="169" selection-end-column="32" />
+        <state relative-caret-position="203">
+          <caret line="172" column="23" lean-forward="true" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
         </state>
       </provider>
     </entry>
