@@ -1,0 +1,9 @@
+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Áº„™úÿÿÿÿ8“Ô·èÈ,
+8squid:S1220""Move this file to a named package.8®‡™äÈ,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Á‘¥øÿÿÿÿ8®‡™äÈ,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Áº„™úÿÿÿÿ8®‡™äÈ,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’øŠ¬8®‡™äÈ,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØþòŠ8“Ô·èÈ,

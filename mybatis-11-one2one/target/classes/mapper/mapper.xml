@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.ICountryDao">
+<!-- 	resultMap 能解决字段和属性不一样的问题 -->
+	<!-- 以后用得比较多 ，是因为可以使用延迟加载-->
+	<!-- 嵌套查询 -->
+	<select id="selectMinisterByCountry" resultType="Minister">
+	select mid,mname from minister where mid=#{ooo}
+	</select>
+	<resultMap type="Country" id="countryMapper">
+		<id column="cid" property="cid"/>
+		<result column="cname" property="cname"/>
+		<!-- country中有一个成员变量是ministers，它的泛型是Minister -->
+		<association property="minister"
+					select="selectMinisterByCountry"
+					column="mid">
+		</association>
+	</resultMap>
+	<select id="selectCountryById" resultMap="countryMapper">
+		select cid,cname,mid
+		from country 
+		where 
+		cid=#{cid}
+	</select>
+
+    <!-- 嵌套结果-->
+    <select id="selectCountryById2" resultMap="countryMapper2">
+        select * from country c,minister m where c.mid = m.mid and c.cid= #{cid}
+    </select>
+    <resultMap id="countryMapper2" type="Country">
+        <id column="cid" property="cid"/>
+        <result column="cname" property="cname"/>
+        <association property="minister" javaType="Minister">
+			<id property="mid" column="mid"/>
+			<result property="mname" column="mname"/>
+		</association>
+    </resultMap>
+</mapper>
