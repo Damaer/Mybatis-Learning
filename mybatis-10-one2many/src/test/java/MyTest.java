@@ -19,6 +19,14 @@ public class MyTest {
     Country country=dao.selectCountryById(1);
     System.out.println(country);
   }
+
+  @Test
+  public void TestselectCountryById2(){
+    Country country=dao.selectCountryById2(1);
+    System.out.println(country);
+  }
+
+
   @After
   public void after(){
     if(sqlSession!=null){
