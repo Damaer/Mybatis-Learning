@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6852c303-739c-4ecc-9db6-08fe078a5d41" name="Default" comment="" />
+    <list default="true" id="3c737cf8-adff-4709-81d6-436d26fa7c8e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,20 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="301">
+              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -41,8 +32,22 @@
       <file leaf-file-name="Minister.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bean/Minister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="119">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <folding>
+                <element signature="e#136#137#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#375#376#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +55,20 @@
       <file leaf-file-name="MyBatisUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/MyBatisUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="40" selection-start-line="10" selection-end-line="40" />
+            <state relative-caret-position="68">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMinisterDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/IMinisterDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,8 +76,8 @@
       <file leaf-file-name="Country.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bean/Country.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="42" selection-start-line="4" selection-end-line="42" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#132#133#0" expanded="true" />
                 <element signature="e#149#150#0" expanded="true" />
@@ -70,20 +87,25 @@
                 <element signature="e#254#255#0" expanded="true" />
                 <element signature="e#293#294#0" expanded="true" />
                 <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#374#375#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ICountryDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/ICountryDao.java">
+      <file leaf-file-name="mapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="323">
+              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -91,26 +113,8 @@
       <file leaf-file-name="test.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/test.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mybatis.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="32" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
+            <state relative-caret-position="238">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -121,11 +125,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/ICountryDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bean/Minister.java" />
         <option value="$PROJECT_DIR$/src/main/java/bean/Country.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/test.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/mapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/ICountryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/IMinisterDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MyTest.java" />
       </list>
     </option>
   </component>
@@ -139,91 +143,89 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="294" />
-    <option name="y" value="35" />
-    <option name="width" value="1302" />
-    <option name="height" value="911" />
+    <option name="x" value="1672" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mybatis-11-one2one" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-11-one2one" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-12-many2one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-12-many2one" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -232,6 +234,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -240,6 +244,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
@@ -247,8 +254,8 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\ideaProject\Mybatis-Learning\mybatis-11-one2one\src\main\java" />
-      <recent name="E:\ideaProject\Mybatis-Learning\mybatis-11-one2one\src\main\resources" />
+      <recent name="E:\ideaProject\Mybatis-Learning\mybatis-12-many2one\src\main\resources" />
+      <recent name="E:\ideaProject\Mybatis-Learning\mybatis-12-many2one\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -263,43 +270,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.TestselectCountryById">
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="MyTest.TestselectCountryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-11-one2one" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="TestselectCountryById" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MyTest.TestselectCountryById2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-11-one2one" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="TestselectCountryById2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -339,73 +312,51 @@
       <properties />
       <listeners />
     </configuration>
-    <list>
-      <item itemvalue="JUnit.MyTest.TestselectCountryById2" />
-      <item itemvalue="JUnit.MyTest.TestselectCountryById" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.MyTest.TestselectCountryById" />
-        <item itemvalue="JUnit.MyTest.TestselectCountryById2" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6852c303-739c-4ecc-9db6-08fe078a5d41" name="Default" comment="" />
-      <created>1531377557872</created>
+      <changelist id="3c737cf8-adff-4709-81d6-436d26fa7c8e" name="Default" comment="" />
+      <created>1531382593288</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1531377557872</updated>
-      <workItem from="1531377562121" duration="4073000" />
+      <updated>1531382593288</updated>
+      <workItem from="1531382597352" duration="3077000" />
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="MyTest_TestselectCountryById2 - 2018.07.12 at 15h 15m 03s.xml">
-      <configuration name="MyTest.TestselectCountryById2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_TestselectCountryById2 - 2018.07.12 at 15h 20m 55s.xml">
-      <configuration name="MyTest.TestselectCountryById2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_TestselectCountryById - 2018.07.12 at 15h 23m 39s.xml">
-      <configuration name="MyTest.TestselectCountryById" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4073000" />
+    <option name="totallyTimeSpent" value="3077000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <frame x="1672" y="-8" width="1696" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32909605" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39635536" />
       <window_info anchor="bottom" id="CheckStyle" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18131869" />
       <window_info anchor="bottom" id="SonarLint" />
       <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -421,17 +372,24 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="238">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/Country.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="42" selection-start-line="4" selection-end-line="42" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#132#133#0" expanded="true" />
             <element signature="e#149#150#0" expanded="true" />
@@ -441,69 +399,140 @@
             <element signature="e#254#255#0" expanded="true" />
             <element signature="e#293#294#0" expanded="true" />
             <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/Minister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/MyBatisUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="40" selection-start-line="10" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ICountryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="1" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/Minister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/IMinisterDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="323">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        <state relative-caret-position="102">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>mybatis-12-many2one</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
