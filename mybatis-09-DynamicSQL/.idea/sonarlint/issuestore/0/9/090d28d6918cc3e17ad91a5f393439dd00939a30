@@ -1,49 +1,49 @@
 
-W
-squid:S106"9Replace this use of System.out or System.err by a logger.(åÅôº8×‹ÄÈ,
-W
-squid:S106¾"9Replace this use of System.out or System.err by a logger.(åÅôº8×‹ÄÈ,
-8squid:S1220""Move this file to a named package.8ÔÁÀÈ,
-\squid:S1155z">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
-]squid:S1155ƒ">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
-V
-squid:S106F"9Replace this use of System.out or System.err by a logger.(„íí8×‹ÄÈ,
-[
-squid:S106f"9Replace this use of System.out or System.err by a logger.(Î¢£Ùùÿÿÿÿ8×‹ÄÈ,
-W
-squid:S106„"9Replace this use of System.out or System.err by a logger.(åÅôº8×‹ÄÈ,
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(²ÖäÇ8×‹ÄÈ,
-W
-squid:S106˜"9Replace this use of System.out or System.err by a logger.(åÅôº8×‹ÄÈ,
-osquid:CommentedOutCodeLine“"<This block of commented-out lines of code should be removed.(Ÿ°Íıÿÿÿÿ8×‹ÄÈ,
-]squid:S1155Œ">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
-]squid:S1155 ">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
-\squid:S1155D">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
-W
-squid:S106Ğ"9Replace this use of System.out or System.err by a logger.(åÅôº8×‹ÄÈ,
-V
-squid:S106&"9Replace this use of System.out or System.err by a logger.(²ÖäÇ8×‹ÄÈ,
-W
-squid:S106¬"9Replace this use of System.out or System.err by a logger.(åÅôº8×‹ÄÈ,
-]squid:S1155«">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
-]squid:S1155½">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(¢±¦øÿÿÿÿ8×‹ÄÈ,
-[
-squid:S106)"9Replace this use of System.out or System.err by a logger.(¢±¦øÿÿÿÿ8×‹ÄÈ,
-]squid:S1155—">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
-]squid:S1155Ï">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
-Rsquid:EmptyStatementUsageCheck("Remove this empty statement.(Åñ­õşÿÿÿÿ8×‹ÄÈ,
-[
-squid:S106{"9Replace this use of System.out or System.err by a logger.(Î¢£Ùùÿÿÿÿ8×‹ÄÈ,
-W
-squid:S106¡"9Replace this use of System.out or System.err by a logger.(åÅôº8×‹ÄÈ,
-isquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(àçÏ8×‹ÄÈ,
-\squid:S1155r">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
-msquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’øŠ¬8×‹ÄÈ,
-V
-squid:S106\"9Replace this use of System.out or System.err by a logger.(„íí8×‹ÄÈ,
-[
-squid:S106s"9Replace this use of System.out or System.err by a logger.(Î¢£Ùùÿÿÿÿ8×‹ÄÈ,
-\squid:S1155e">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8×‹ÄÈ,
+Psquid:EmptyStatementUsageCheck"Remove this empty statement.(Åñ­õşÿÿÿÿ8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Î¢£Ùùÿÿÿÿ8§ùö¡È,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Î¢£Ùùÿÿÿÿ8§ùö¡È,
+8squid:S1220""Move this file to a named package.8§ùö¡È,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(àçÏ8§ùö¡È,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ÿ°Íıÿÿÿÿ8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(åÅôº8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(åÅôº8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(åÅôº8§ùö¡È,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’øŠ¬8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(²ÖäÇ8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(åÅôº8§ùö¡È,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Î¢£Ùùÿÿÿÿ8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(„íí8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(åÅôº8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(„íí8§ùö¡È,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢±¦øÿÿÿÿ8§ùö¡È,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢±¦øÿÿÿÿ8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(åÅôº8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(²ÖäÇ8§ùö¡È,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(åÅôº8§ùö¡È,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ÈÖ¶8§ùö¡È,

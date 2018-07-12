@@ -20,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="148">
+              <caret line="10" column="27" lean-forward="true" selection-end-line="46" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="172" column="23" lean-forward="true" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+              <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -100,11 +100,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="187" />
-    <option name="y" value="229" />
-    <option name="width" value="1302" />
-    <option name="height" value="1032" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -141,39 +141,7 @@
               <item name="mybatis-09-DynamicSQL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis-09-DynamicSQL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-09-DynamicSQL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis-09-DynamicSQL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-09-DynamicSQL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis-09-DynamicSQL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-09-DynamicSQL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis-09-DynamicSQL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-09-DynamicSQL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mybatis-09-DynamicSQL" type="b2602c69:ProjectViewProjectNode" />
@@ -362,7 +330,7 @@
       <option name="presentableId" value="Default" />
       <updated>1531183832272</updated>
       <workItem from="1531183835674" duration="432000" />
-      <workItem from="1531186061126" duration="15358000" />
+      <workItem from="1531186061126" duration="15500000" />
     </task>
     <servers />
   </component>
@@ -399,11 +367,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15790000" />
+    <option name="totallyTimeSpent" value="15932000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="187" y="229" width="1302" height="1032" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -414,13 +381,13 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21395881" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21298406" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.261254" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1984127" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -517,13 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.3.0/mybatis-3.3.0-sources.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
@@ -553,7 +513,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="172" column="23" lean-forward="true" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+          <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="10" column="27" lean-forward="true" selection-end-line="46" selection-end-column="10" />
         </state>
       </provider>
     </entry>
