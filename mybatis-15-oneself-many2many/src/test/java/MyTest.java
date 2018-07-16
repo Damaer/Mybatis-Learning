@@ -1,26 +1,26 @@
-import beans.NewsLabel;
-import dao.INewsLabelDao;
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import bean.Student;
+import dao.IStudentDao;
 import utils.MyBatisUtils;
 
-import java.util.List;
 public class MyTest {
-  private INewsLabelDao dao;
+  private IStudentDao dao;
   private SqlSession sqlSession;
   @Before
   public void Before(){
     sqlSession=MyBatisUtils.getSqlSession();
-    dao=sqlSession.getMapper(INewsLabelDao.class);
+    dao=sqlSession.getMapper(IStudentDao.class);
   }
   @Test
   public void TestselectMinisterById(){
-    NewsLabel children=dao.selectParentByParentId(7);
-
-    System.out.println(children);
-
+    Student student=dao.selectStudentById(1);
+    System.out.println(student);
   }
   @After
   public void after(){
@@ -30,3 +30,4 @@ public class MyTest {
   }
 
 }
+
