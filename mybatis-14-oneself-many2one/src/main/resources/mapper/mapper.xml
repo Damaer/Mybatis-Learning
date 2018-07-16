@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.INewsLabelDao">
+
+    <!-- 筛选出子孙栏目 -->
+    <resultMap type="beans.NewsLabel" id="newsLabelMapper">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <collection property="children"
+                    ofType="NewsLabel"
+                    select="selectChildByParentId"
+                    column="id"/>
+    </resultMap>
+    <select id="selectChildByParentId" resultMap="newsLabelMapper">
+		select id,name from newslabel where pid=#{xxx}
+	</select>
+
+    <!--  筛选出自己以及子孙栏目-->
+    <select id="selectChildByParentId2" resultMap="newsLabelMapper2">
+		select id,name from newslabel where pid=#{ooo}
+	</select>
+    <resultMap type="beans.NewsLabel" id="newsLabelMapper2">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <collection property="children"
+                    ofType="NewsLabel"
+                    select="selectChildByParentId2"
+                    column="id"/>
+    </resultMap>
+    <select id="selectSelfAndChildByParentId" resultMap="newsLabelMapper2">
+		select id,name from newslabel where id=#{xxx}
+	</select>
+</mapper>

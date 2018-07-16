@@ -1,0 +1,10 @@
+
+8squid:S1220""Move this file to a named package.8µ„‹óÈ,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(°ÀÁþüÿÿÿÿ8µ„‹óÈ,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ã—¤8µ„‹óÈ,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(°ÀÁþüÿÿÿÿ8µ„‹óÈ,
+Rsquid:UselessImportCheck")Remove this unused import 'bean.Country'.(†­çè8µ„‹óÈ,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’øŠ¬8µ„‹óÈ,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Üå¬Çúÿÿÿÿ8µ„‹óÈ,
