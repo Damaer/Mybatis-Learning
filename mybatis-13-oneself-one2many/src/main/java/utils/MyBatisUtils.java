@@ -10,31 +10,31 @@ import java.io.InputStream;
 
 public class MyBatisUtils {
 
-    /*	public SqlSession getSqlSession(){
-            InputStream is;
-            try {
-                is = Resources.getResourceAsStream("mybatis.xml");
-                return new SqlSessionFactoryBuilder().build(is).openSession();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-            return null;
-        }*/
-    static private SqlSessionFactory sqlSessionFactory;
+  /*	public SqlSession getSqlSession(){
+      InputStream is;
+      try {
+          is = Resources.getResourceAsStream("mybatis.xml");
+          return new SqlSessionFactoryBuilder().build(is).openSession();
+      } catch (IOException e) {
+          // TODO Auto-generated catch block
+          e.printStackTrace();
+      }
+      return null;
+  }*/
+  private static SqlSessionFactory sqlSessionFactory;
 
-    static public SqlSession getSqlSession() {
-        InputStream is;
-        try {
-            is = Resources.getResourceAsStream("mybatis.xml");
-            if (sqlSessionFactory == null) {
-                sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
-            }
-            return sqlSessionFactory.openSession();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return null;
+  public static SqlSession getSqlSession() {
+    InputStream is;
+    try {
+      is = Resources.getResourceAsStream("mybatis.xml");
+      if (sqlSessionFactory == null) {
+        sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+      }
+      return sqlSessionFactory.openSession();
+    } catch (IOException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
     }
+    return null;
+  }
 }
