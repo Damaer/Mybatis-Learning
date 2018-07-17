@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 配置数据库文件 -->
+    <properties resource="jdbc_mysql.properties">
+
+    </properties>
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="true"/>
+    </settings>
+    <!-- 别名，对数据对象操作全名太长，需要使用别名 -->
+    <typeAliases>
+        <!--<typeAlias type="bean.Student" alias="Student"/>-->
+        <!--直接使用类名即可，对于整个包的路径配置（别名），简单快捷 -->
+        <package name="beans"/>
+    </typeAliases>
+    <!-- 配置运行环境 -->
+    <!-- default 表示默认使用哪一个环境，可以配置多个，比如开发时的测试环境，上线后的正式环境等 -->
+    <environments default="mysqlEM">
+        <environment id="mysqlEM">
+            <transactionManager type="JDBC">
+            </transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.user}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 注册映射文件 -->
+    <mappers>
+        <mapper resource="mapper/mapper.xml"/>
+    </mappers>
+</configuration>
