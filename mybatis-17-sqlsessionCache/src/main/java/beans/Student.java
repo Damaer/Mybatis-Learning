@@ -11,7 +11,7 @@ public class Student {
 		this.age = age;
 		this.score = score;
 	}
-	public Student(int id, String name, int age, double score) {
+	public Student(Integer id, String name, Integer age, Double score) {
 		super();
 		this.id=id;
 		this.name = name;

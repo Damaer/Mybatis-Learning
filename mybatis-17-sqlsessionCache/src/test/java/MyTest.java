@@ -1,9 +1,6 @@
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import javax.print.attribute.standard.Sides;
-
 import org.apache.ibatis.session.SqlSession;
 import org.junit.After;
 import org.junit.Before;
@@ -21,25 +18,23 @@ public class MyTest {
 		sqlSession=MyBatisUtils.getSqlSession();
 		dao=sqlSession.getMapper(IStudentDao.class);
 	}
-	/**
-	 * �������
-	 */
+
 	@Test
 	public void testInsert(){
 
 		Student student=new Student("enasden",21,94.6);
-		System.out.println("����ǰ��student="+student);
+		System.out.println("student="+student);
 		dao.insertStudent(student);
-		System.out.println("�����student="+student);
+		System.out.println("student="+student);
 
 		sqlSession.commit();
 	}
 	@Test
 	public void testinsertStudentCacheId(){
 		Student student=new Student("helloworld",14,94.6);
-		System.out.println("����ǰ��student="+student);
+		System.out.println("student="+student);
 		dao.insertStudentCacheId(student);;
-		System.out.println("�����student="+student);
+		System.out.println("student="+student);
 	}
 	@Test
 	public void testdeleteStudentById(){
@@ -49,7 +44,7 @@ public class MyTest {
 	@Test
 	public void testUpdate(){
 		Student student=new Student("lallalalla",14,94.6);
-		student.setId(8);
+		student.setId(1);
 		dao.updateStudent(student);
 
 	}
@@ -63,22 +58,15 @@ public class MyTest {
 			}
 		}
 	}
-@Test
-	public void testselectMap(){
-		Map<String,Object>students=dao.selectAllStudentsMap();
-		//����ͬ�����ֵĻ�ֱ���滻��֮ǰ������ģ���Ϊ��ͬһ��key
-		System.out.println(students.get("helloworld"));
-		System.out.println(students.get("1ADAS"));
-	}
 	@Test
 	public void testselectStudentById(){
-		Student student=dao.selectStudentById(19);
+		Student student=dao.selectStudentById(1);
 		System.out.println(student);
 	}
 
 	@Test
 	public void testselectStudentByName(){
-		List<Student>students=dao.selectStudentsByName("abc");
+		List<Student>students=dao.selectStudentsByName("hello");
 		if(students.size()>0){
 			for(Student student:students)
 				System.out.println(student);

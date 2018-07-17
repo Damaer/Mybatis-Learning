@@ -13,8 +13,6 @@ public interface IStudentDao {
 	
 
 	public List<Student> selectAllStudents();
-	public Map<String, Object> selectAllStudentsMap();
-	
 	public Student selectStudentById(int id);
 	public List<Student>selectStudentsByName(String name);
 	public List<Student>selectStudentByNameAndAge(Map<String, Object> map);

@@ -29,9 +29,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<!-- 查询列表 -->
 	<!-- 系统不知道返回封装为什么类型，所以要注明返回类型 -->
 	<select id="selectAllStudents" resultType="Student">
-		select id,name,age,score from student
-		<!-- 如果数据库为tid，tname，tage，那么我们可以使用别名
-		select tid id,tname name,tage age,tscore score from student -->
+		select * from student
 	</select>
 	<!-- 通过id来查询学生 -->
 	<select id="selectStudentById" resultType="Student">
