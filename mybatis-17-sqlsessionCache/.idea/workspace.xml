@@ -29,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/beans/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+            <state relative-caret-position="229">
+              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -41,8 +41,8 @@
       <file leaf-file-name="IStudentDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/IStudentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="102">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,8 +53,8 @@
       <file leaf-file-name="mapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -69,11 +69,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="MyTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/MyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="168">
+              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,11 +110,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/IStudentDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/test.sql" />
-        <option value="$PROJECT_DIR$/src/test/java/MyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/mapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/beans/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/IStudentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/mapper.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/MyTest.java" />
       </list>
     </option>
   </component>
@@ -255,7 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.testselectStudentByNameAndAge">
+  <component name="RunManager" selected="JUnit.MyTest.testselectStudentById">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -391,9 +391,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.testselectStudentById" />
         <item itemvalue="JUnit.MyTest.testselectStudentByNameAndAge" />
         <item itemvalue="JUnit.MyTest.testselectStudentByName" />
-        <item itemvalue="JUnit.MyTest.testselectStudentById" />
         <item itemvalue="JUnit.MyTest.testselectMap" />
         <item itemvalue="JUnit.MyTest.testselectList" />
       </list>
@@ -409,23 +409,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531824771008</updated>
-      <workItem from="1531824780002" duration="4624000" />
+      <workItem from="1531824780002" duration="5878000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyTest_testInsert - 2018.07.17 at 20h 01m 02s.xml">
-      <configuration name="MyTest.testInsert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_testInsert - 2018.07.17 at 20h 10m 04s.xml">
-      <configuration name="MyTest.testInsert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_testinsertStudentCacheId - 2018.07.17 at 20h 10m 11s.xml">
-      <configuration name="MyTest.testinsertStudentCacheId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_testdeleteStudentById - 2018.07.17 at 20h 10m 22s.xml">
-      <configuration name="MyTest.testdeleteStudentById" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyTest_testUpdate - 2018.07.17 at 20h 10m 35s.xml">
       <configuration name="MyTest.testUpdate" configurationId="JUnit" />
     </history-entry>
@@ -438,12 +426,31 @@
     <history-entry file="MyTest_testselectList - 2018.07.17 at 20h 16m 47s.xml">
       <configuration name="MyTest.testselectList" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyTest_testselectMap - 2018.07.17 at 20h 19m 13s.xml">
+      <configuration name="MyTest.testselectMap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_testselectStudentById - 2018.07.17 at 20h 19m 56s.xml">
+      <configuration name="MyTest.testselectStudentById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_testselectStudentByName - 2018.07.17 at 20h 20m 10s.xml">
+      <configuration name="MyTest.testselectStudentByName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_testselectStudentByNameAndAge - 2018.07.17 at 20h 20m 23s.xml">
+      <configuration name="MyTest.testselectStudentByNameAndAge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_testselectStudentById - 2018.07.17 at 20h 25m 25s.xml">
+      <configuration name="MyTest.testselectStudentById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_testselectStudentById - 2018.07.17 at 20h 25m 53s.xml">
+      <configuration name="MyTest.testselectStudentById" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4624000" />
+    <option name="totallyTimeSpent" value="5878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1672" y="-8" width="1696" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -454,13 +461,13 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6255507" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36123347" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info anchor="bottom" id="SonarLint" />
       <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -507,26 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/IStudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -534,17 +521,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="229">
+          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/IStudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        <state relative-caret-position="102">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
