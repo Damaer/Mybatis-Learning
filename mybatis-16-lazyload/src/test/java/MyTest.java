@@ -18,7 +18,8 @@ public class MyTest {
 	@Test
 	public void TestselectCountryById(){
 		Country country=dao.selectCountryById(1);
-		System.out.println(country);
+		System.out.println(country.getCid());
+		// System.out.println(country.getMinisters());
 	}
 	@After
 	public void after(){

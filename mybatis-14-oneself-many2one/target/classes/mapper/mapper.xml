@@ -2,16 +2,18 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="dao.INewsLabelDao">
-    <resultMap type="NewsLabel" id="newsLabelMapper">
-        <id column="id" property="id"/>
-        <result column="name" property="name"/>
-        <association property="parent"
-                     javaType="NewsLabel"
-                     select="selectParentByParentId"
-                     column="pid"/>
+<mapper namespace="dao.IStudentDao">
+    <resultMap type="Student" id="studentMapper">
+        <id column="sid" property="sid"/>
+        <result column="sname" property="sname"/>
+        <collection property="courses" ofType="Course">
+            <id column="cid" property="cid"/>
+            <result column="cname" property="cname"/>
+        </collection>
     </resultMap>
-    <select id="selectParentByParentId" resultMap="newsLabelMapper">
-		select id,name,pid from newslabel where id=#{xxx}
+    <select id="selectStudentById" resultMap="studentMapper">
+		select sid,sname,cid,cname
+		from student,middle,course
+		where sid=studentId and cid=courseId and sid=#{xxx}
 	</select>
 </mapper>

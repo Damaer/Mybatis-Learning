@@ -1,7 +1,0 @@
-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(„íí8¯¶¶˜Ê,
-8squid:S1220""Move this file to a named package.8¯¶¶˜Ê,
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’øŠ¬8¯¶¶˜Ê,
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Üå¬Çúÿÿÿÿ8¯¶¶˜Ê,
-Ysquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¯¶¶˜Ê,
