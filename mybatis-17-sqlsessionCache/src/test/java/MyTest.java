@@ -18,7 +18,7 @@ public class MyTest {
 		sqlSession=MyBatisUtils.getSqlSession();
 		dao=sqlSession.getMapper(IStudentDao.class);
 	}
-	
+
 	@Test
 	public void testselectStudentById(){
 
@@ -28,6 +28,7 @@ public class MyTest {
 		// 第二次查询
 		Student student2=dao.selectStudentById(1);
 		System.out.println(student2);
+		HashMap
 	}
 
 	@After
