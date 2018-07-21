@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-        <!DOCTYPE mapper
-                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-        <!-- 把mapper的namespace改成类名的全名，那么直接调用接口的方法的时候才有可能却找到对应的mapper中的对应的方法 -->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 把mapper的namespace改成类名的全名，那么直接调用接口的方法的时候才有可能却找到对应的mapper中的对应的方法 -->
 <mapper namespace="dao.IStudentDao">
 
-<!-- 通过id来查询学生 -->
-<select id="selectStudentById" resultType="Student">
+    <!-- 通过id来查询学生 -->
+    <select id="selectStudentById" resultType="Student">
 		select * from student where id=#{xxx}
 
 	</select>
 
-<!-- 测试不同id的sql -->
-<select id="selectStudentById2" resultType="Student">
+    <!-- 测试不同id的sql -->
+    <select id="selectStudentById2" resultType="Student">
 		select * from student where id=#{xxx}
 </select>
-    
+
+    <insert id="insertStudent" parameterType="Student">
+		insert into student(name,age,score) values(#{name},#{age},#{score})
+	</insert>
+    <!-- 删除 -->
+    <delete id="deleteStudentById">
+        delete from student where id=#{id}
+        <!-- 这里的id放什么都可以，只是一个占位符，不表示什么 -->
+    </delete>
+
+    <update id="updateStudent">
+		update student set name=#{name},age=#{age},score=#{score} where id=#{id}
+	</update>
 </mapper>

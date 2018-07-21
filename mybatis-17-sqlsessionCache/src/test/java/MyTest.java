@@ -53,6 +53,23 @@ public class MyTest {
         Student student2=dao2.selectStudentById(17);
         System.out.println(student2);
     }
+
+
+    @Test
+    public void test03(){
+
+        // 第一次查询
+        Student student=dao.selectStudentById(17);
+        System.out.println(student);
+        //插入学生
+        Student student1 = new Student("12112",12,21.6);
+        student1.setId(18);
+        //dao.insertStudent(student1);
+        //dao.updateStudent(student1);
+        dao.deleteStudentById(18);
+        student=dao.selectStudentById(17);
+        System.out.println(student);
+    }
 	@After
 	public void after(){
 		if(sqlSession!=null){
