@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 把mapper的namespace改成类名的全名，那么直接调用接口的方法的时候才有可能却找到对应的mapper中的对应的方法 -->
+<mapper namespace="dao.IStudentDao2">
+    <!-- 通过id来查询学生 -->
+    <select id="selectStudentById" resultType="Student">
+		select * from student where id=#{xxx}
+	</select>
+
+</mapper>

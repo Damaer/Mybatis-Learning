@@ -1,6 +1,8 @@
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import dao.IStudentDao2;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.After;
 import org.junit.Before;
@@ -23,19 +25,39 @@ public class MyTest {
 	public void testselectStudentById(){
 
 		// 第一次查询
-		Student student=dao.selectStudentById(1);
+		Student student=dao.selectStudentById(17);
 		System.out.println(student);
 		// 第二次查询
-		Student student2=dao.selectStudentById(1);
+		Student student2=dao.selectStudentById(17);
 		System.out.println(student2);
-		HashMap
 	}
+    @Test
+    public void testDiffereentId2(){
 
+        // 第一次查询
+        Student student=dao.selectStudentById(17);
+        System.out.println(student);
+        // 第二次查询，测试不同的id，同一个namespace
+        Student student2=dao.selectStudentById2(17);
+        System.out.println(student2);
+    }
+
+    @Test
+    public void testDiffereentNamespaceSameId(){
+
+        // 第一次查询
+        Student student=dao.selectStudentById(17);
+        System.out.println(student);
+        // 第二次查询，测试相同的id，不同的namespace
+        IStudentDao2 dao2= sqlSession.getMapper(IStudentDao2.class);
+        Student student2=dao2.selectStudentById(17);
+        System.out.println(student2);
+    }
 	@After
 	public void after(){
 		if(sqlSession!=null){
 			sqlSession.close();
 		}
 	}
-	
+
 }
