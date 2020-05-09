@@ -14,7 +14,7 @@ public class MyTest {
 	}
 	@Test
 	public void testInsert(){
-		Student student=new Student("1ADAS",23,94.6);
+		Student student=new Student("Sam",30,90);
 		dao.insertStu(student);
 	}
 }

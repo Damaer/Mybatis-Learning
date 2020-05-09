@@ -5,7 +5,7 @@
   <configuration>
   		<!-- 配置运行环境 -->
   		<!-- default 表示默认使用哪一个环境，可以配置多个，比如开发时的测试环境，上线后的正式环境等 -->
-  		<environments default="mysqlEM">  		
+  		<environments default="mysqlEM">
   			<environment id="mysqlEM">
   				<transactionManager type="JDBC">		
   				</transactionManager>
