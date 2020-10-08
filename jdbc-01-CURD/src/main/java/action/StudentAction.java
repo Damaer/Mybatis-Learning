@@ -20,7 +20,7 @@ public class StudentAction {
         for(int i=0;i<students.size();i++){
             System.out.println(students.get(i).toString());
         }
-        System.out.println("========================修改学生信息========================");
+        /*System.out.println("========================修改学生信息========================");
         Student stu2 = new Student("Jam",20,98.4);
         stu2.setId(2);
         studentDao.updateStudent(stu2);
@@ -36,7 +36,7 @@ public class StudentAction {
         students =studentDao.selectStudentList();
         for(int i=0;i<students.size();i++){
             System.out.println(students.get(i).toString());
-        }
+        }*/
     }
 
 }

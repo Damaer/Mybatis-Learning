@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jdbc-01-CURD" />
+        <module name="log4j" />
+        <module name="mybatis17" />
+        <module name="mybatis09" />
+        <module name="mybatis08" />
+        <module name="mybatis07" />
+        <module name="mybatis06" />
+        <module name="mybatis05" />
+        <module name="mybatis04" />
+        <module name="mybatis03" />
+        <module name="mybatis02" />
+        <module name="mybatis01" />
+        <module name="mybatis16" />
+        <module name="mybatis15" />
+        <module name="mybatis14" />
+        <module name="mybatis13" />
+        <module name="mybatis12" />
+        <module name="mybatis11" />
+        <module name="mybatis10" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jdbc-01-CURD" target="1.5" />
+      <module name="log4j" target="1.5" />
+      <module name="mybatis01" target="1.5" />
+      <module name="mybatis02" target="1.5" />
+      <module name="mybatis03" target="1.5" />
+      <module name="mybatis04" target="1.5" />
+      <module name="mybatis05" target="1.5" />
+      <module name="mybatis06" target="1.5" />
+      <module name="mybatis07" target="1.5" />
+      <module name="mybatis08" target="1.5" />
+      <module name="mybatis09" target="1.5" />
+      <module name="mybatis10" target="1.5" />
+      <module name="mybatis11" target="1.5" />
+      <module name="mybatis12" target="1.5" />
+      <module name="mybatis13" target="1.5" />
+      <module name="mybatis14" target="1.5" />
+      <module name="mybatis15" target="1.5" />
+      <module name="mybatis16" target="1.5" />
+      <module name="mybatis17" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
