@@ -29,7 +29,7 @@
   		</environments>
   		<!-- 注册映射文件 -->
   		<mappers>
-  			<mapper resource="mapper/mapper.xml"/>
-            <mapper resource="mapper/mapper1.xml"/>
+  			<mapper resource="mapper/mapper1.xml"/>
+            <mapper resource="mapper/mapper2.xml"/>
   		</mappers>
   </configuration>
