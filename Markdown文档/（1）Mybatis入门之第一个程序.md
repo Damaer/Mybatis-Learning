@@ -52,7 +52,7 @@ CREATE TABLE `student` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(20) N
 
 往`pom.xml`里面添加依赖,每一个<dependency></dependency>之间都是一种依赖包，选中项目右键--> `Maven` --> `Reimport`,这样就可以下载我们所需要的依赖了：
 
-```
+```pom
     <dependencies>
         <!-- mybatis核心包 -->
         <dependency>
@@ -94,8 +94,9 @@ CREATE TABLE `student` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(20) N
 为了能实现日志的打印功能，我们在pom.xml文件中已经引入了日志dependency，在这里还需要在`resources`文件夹下新建配置`log4j.properties`文件,具体配置代表什么意思，可以参考[log4j 与log4j2详解](https://blog.csdn.net/Aphysia/article/details/80470163)
 
 
-**log4j.properties**
-```pom
+> **log4j.properties**
+
+```properties
 log4j.rootLogger=DEBUG, stdout
 
 log4j.appender.stdout=org.apache.log4j.ConsoleAppender
@@ -119,7 +120,7 @@ log4j.logger.java.sql.ResultSet =debug
 配置好这些之后，前面结构图上面写到有一个`mybatis.xml`文件，里面配置了运行的环境（关于数据库的连接），连接的数据库可以配置多个，但是必须指定使用哪一个，这样做的原因的世界在xml文件进行修改不需要重新编译，更换数据库比较简单,除此之外，里面还需要配置mapper.xml,也就是映射文件，我们要告诉它，我们将sql配置写在哪个文件。
 
 
-**mybatis.xml**
+> **mybatis.xml**
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
@@ -310,6 +311,15 @@ public class MyTest {
 
 
 # 6.总结
+
 最后总结一下上面写法的思路：
-1.先读取`mybatis.xml`文件流，这是最重要的配置文件，里面的内容是
+
+1.先读取`mybatis.xml`文件流`inputStream`，这是最重要的配置文件，里面的内容配置的是数据库环境，比如连接哪一个数据库链接，除此之外，还有注册映射文件，比如扫描哪一个文件,我们配置的是`/mapper.xml`。  
+2.通过`inputStream`创建`sqlSessionFactory`,也就是sql会话工厂，所谓工厂，肯定是用来创造或者制造`sqlSession`的。  
+3.`sqlSessionFactory.openSession()`可以打开一个`sqlSession`，也就是sql会话，获得这个操作数据库的会话窗口。  
+4.通过`sqlSession`提供的方法去操作数据库，提供方法名，和参数即可。比如`            sqlSession.insert("insertStudent", student);`，这个`insertStudent`从哪里冒出来的？当然是前面扫描`mapper.xml`的时候，`mapper.xml`里面配置的,`insertStudent`是id，需要是唯一的，就能通过这个找到对应的sql来执行。  
+5.提交会话，`commit`,不一定需要，具体看数据库的类型.  
+6.关闭会话,`sqlSession.close();`。
+
+
 

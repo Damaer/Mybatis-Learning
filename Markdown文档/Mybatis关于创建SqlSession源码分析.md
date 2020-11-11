@@ -1,4 +1,5 @@
-##### 1.为什么我们使用SQLSessionFactoryBuilder的时候不需要自己关闭流？
+
+# 1.为什么我们使用SQLSessionFactoryBuilder的时候不需要自己关闭流？
 我们看我们的代码：
 ``` java
 public class StudentDaoImpl implements IStudentDao {
@@ -50,7 +51,7 @@ public class StudentDaoImpl implements IStudentDao {
         return var5;
     }
 ```
-##### 2.Sqlsession是如何创建的？
+# 2.Sqlsession是如何创建的？
 语句里面执行代码：
 ``` java
 sqlSession=sqlSessionFactory.openSession();
@@ -63,7 +64,7 @@ public interface SqlSessionFactory {
     }
 ```
 idea选中该方法,`ctrl + alt +B`,我们可以发现有DefaultSqlSessionFactory,和SqlSessionManager这两个类实现了SqlSessionFactory这个接口
-<br>![](http://markdownpicture.oss-cn-qingdao.aliyuncs.com/18-6-2/75470738.jpg)<br>
+![](http://markdownpicture.oss-cn-qingdao.aliyuncs.com/18-6-2/75470738.jpg)
 那么我们需要跟进去DefaultSqlSessionFactory这个类的openSesseion方法,在里面调用了一个封装好的方法：openSessionFromDataSource()
 ``` java
     public SqlSession openSession() {
@@ -77,7 +78,7 @@ idea选中该方法,`ctrl + alt +B`,我们可以发现有DefaultSqlSessionFactor
     }
 ```
 我们再跟进去源码,我们会发现有一个参数是`autoCommit`，也就是自动提交，我们可以看到上一步传值是false，也就是不会自动提交，通过configuration（主配置）获取environment（运行环境），然后通过environment（环境）开启和获取一个事务工厂，通过事务工厂获取事务对象Transaction，通过事务对象创建一个执行器executor，Executor是一个接口，实现类有比如SimpleExecutor，BatchExecutor，ReuseExecutor，所以我们下面代码里的execType，是指定它的类型，生成指定类型的Executor，把引用给接口对象，有了执行器之后就可以return一个DefaultSqlSession对象了。
-``` java
+```java
     private SqlSession openSessionFromDataSource(ExecutorType execType, TransactionIsolationLevel level, boolean autoCommit) {
         Transaction tx = null;
         DefaultSqlSession var8;
@@ -111,7 +112,7 @@ idea选中该方法,`ctrl + alt +B`,我们可以发现有DefaultSqlSessionFactor
         this.autoCommit = autoCommit;
     }
 ```
-##### 3.增删改是怎么执行的
+# 3.增删改是怎么执行的
 我们使用到这句代码：
 ``` java
 sqlSession.insert("insertStudent",student);
@@ -144,7 +145,7 @@ public int update(String statement) {
         return var4;
     }
 ```
-##### 4.SqlSession.commit()为什么可以提交事务(transaction)？
+# 4.SqlSession.commit()为什么可以提交事务(transaction)？
 首先，我们使用到的源码，同样选择DefaultSqlSession这个接口的方法,我们发现commit里面调用了另一个commit方法，传进去一个false的值：
 ``` java
     public void commit() {
@@ -192,7 +193,7 @@ public void commit(boolean required) throws SQLException {
     }
 }
 ```
-##### 5.为什么sqlsession关闭就不需要回滚了？
+# 5.为什么sqlsession关闭就不需要回滚了？
 假如我们在上面已经提交过了，那么dirty的值就为false。我们使用的是`sqlSession.close();`，跟进去源码，同样是接口，我们跟DefaoultSqlsession的方法，同样调用了isCommitOrRollbackRequired()这个方法：
 ``` java
     public void close() {
