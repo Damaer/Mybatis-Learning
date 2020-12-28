@@ -84,7 +84,7 @@ pom.xml:
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
         <!-- 日志文件管理包 -->
