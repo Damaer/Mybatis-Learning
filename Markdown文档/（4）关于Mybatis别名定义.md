@@ -1,5 +1,7 @@
-我们下面需要改进的是别名，也趁这个机会介绍一下别名的作用。<br>
-其实在我们实际开发中，大多数情况下，一个mapper.xml文件对应的是对一个对象的操作，当前的mapper如下：
+
+我们下面需要改进的是别名，也趁这个机会介绍一下别名的作用。
+
+其实在我们实际开发中，大多数情况下，一个`mapper.xml`文件对应的是对一个对象的操作，当前的`mapper`如下：
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper 
@@ -11,14 +13,19 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</insert>
 </mapper>
 ```
-我们可以看出parameterType有时候会写很长很长，每写一个sql我们就要使用parameterType传值或者使用返回类型，意思就是这个parameterType太长了，有没有什么办法可以让我们就写类名就可以了，其实是有的！！！那就是别名，mybatis可以让我们起一个别名给它，别名定义是在mybatis.xml主配置文件中。注意别名标签应该定义在<properties></properties>后面，在<environments></environments>前面，顺序不能颠倒。`<typeAliases></typeAliases>`这个标签里面可以定义很多别名<typeAlias/>
+我们可以看出：
+
+**`parameterType`有时候会写很长很长，每写一个`sql`我们就要使用`parameterType`传值或者使用返回类型，意思就是这个`parameterType`太长了，有没有什么办法可以让我们就写类名就可以了**
+
+
+其实是有的！！！那就是别名，`mybatis`可以让我们起一个别名给它，别名定义是在`mybatis.xml`主配置文件中。注意别名标签应该定义在`<properties></properties>`后面，在`<environments></environments>`前面，顺序不能颠倒。`<typeAliases></typeAliases>`这个标签里面可以定义很多别名<typeAlias/>
 ``` xml
 <!-- 别名，对数据对象操作全名太长，需要使用别名 -->
 <typeAliases>
     <typeAlias type="bean.Student" alias="Student"/>
 </typeAliases>
 ```
-我们在上面的别名中的意思是给bean包下Student这个类起了一个别名，名字叫Student，那么我们就可以使用了，很简单：
+我们在上面的别名中的意思是给`bean`包下`Student`这个类起了一个别名，名字叫`Student`，那么我们就可以使用了，很简单：
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper 
@@ -30,7 +37,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</insert>
 </mapper>
 ```
-但是要是bean里面有很多类，我们是不是要写很多别名呢？其实不用，我们可以观察到`<typeAliases></typeAliases>`这个标签下面有一个`<package/>`标签，他的作用就体现出来了。将指定的包中的类的简单类名当做别名。
+但是要是bean里面有很多类，我们是不是要写很多别名呢？其实不用，我们可以观察到`<typeAliases></typeAliases>`这个标签下面有一个`<package/>`标签，它的作用就体现出来了。将指定的包中的类的简单类名当做别名。
 ``` xml
 <typeAliases>
   	<!-- 配置一个类的别名 -->
@@ -40,7 +47,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 </typeAliases>
 ```
 #### 贴代码
-在这里贴一下代码，代码结构如下：<br>![](http://markdownpicture.oss-cn-qingdao.aliyuncs.com/18-6-24/7568510.jpg)<br>
+在这里贴一下代码，代码结构如下：
+![](http://markdownpicture.oss-cn-qingdao.aliyuncs.com/18-6-24/7568510.jpg)
+
 bean包下的Student类：
 ``` java
 package bean;
@@ -92,8 +101,8 @@ public class Student {
 }
 
 ```
-dao包下面的IStudentDao接口：
-```
+`dao`包下面的`IStudentDao`接口：
+``` java
 package dao;
 import bean.Student;
 public interface IStudentDao {
@@ -101,8 +110,8 @@ public interface IStudentDao {
 }
 
 ```
-dao包下的实现类：
-```
+`dao`包下的实现类：
+```java
 import bean.Student;
 import org.apache.ibatis.session.SqlSession;
 import utils.MyBatisUtils;
@@ -122,7 +131,7 @@ public class StudentDaoImpl implements IStudentDao {
     }
 }
 ```
-util包下面的工具类：
+`util`包下面的工具类：
 ``` java
 public class MyBatisUtils {
 
@@ -155,7 +164,7 @@ public class MyBatisUtils {
     }
 }
 ```
-resource资源目录下mapper目录下的mapper.xml(mapper1.xml也一样内容，只是里面namespace不一样)：
+`resource`资源目录下`mapper`目录下的`mapper.xml`(mapper1.xml也一样内容，只是里面namespace不一样)：
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
@@ -168,15 +177,19 @@ resource资源目录下mapper目录下的mapper.xml(mapper1.xml也一样内容�
 	</insert>
 </mapper>
 ```
-jdbc_mysql.properties文件（jdbc_oracle.properties是空文件）：
-```
+
+
+`jdbc_mysql.properties`文件（`jdbc_oracle.properties`是空文件），主要是配置了数据库连接相关的信息：
+``` yaml
 jdbc.driver=com.mysql.jdbc.Driver
-jdbc.url=jdbc:mysql://localhost:3306/test
+jdbc.url=jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&serverTimezone=UTC
 jdbc.user=root
 jdbc.password=123456
 ```
-log4j.properties
-```
+
+
+`log4j.properties`,主要是配置了log日志相关的信息：
+```yaml
 log4j.prpp
 log4j.rootLogger=DEBUG, stdout
 
@@ -187,8 +200,10 @@ log4j.logger.java.sql.Statement = debug
 log4j.logger.java.sql.PreparedStatement = debug
 log4j.logger.java.sql.ResultSet =debug
 ```
-主配置文件mybatis.xml:
-```
+
+
+主配置文件`mybatis.xml`，这个是`mybatis`的入口配置文件：
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -225,16 +240,20 @@ log4j.logger.java.sql.ResultSet =debug
     </mappers>
 </configuration>
 ```
-test.sql
-```
+
+
+`test.sql`:这是我们创建数据库的时候使用的sql
+``` sql
 #创建数据库
 CREATE DATABASE `test` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 #创建数据表
 CREATE TABLE `student` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(20) NOT NULL ,
 `age` INT NOT NULL , `score` DOUBLE NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
 ```
-测试文件MyTest.java:
-``` 
+
+
+测试文件`MyTest.java`:
+``` java
 public class MyTest {
 	private IStudentDao dao;
 	@Before
@@ -248,7 +267,7 @@ public class MyTest {
 	}
 }
 ```
-Maven配置文件pom.xml:
+`Maven`配置文件`pom.xml`:
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -270,7 +289,7 @@ Maven配置文件pom.xml:
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.29</version>
+            <version>8.0.21</version>
         </dependency>
         <!-- junit测试包 -->
         <dependency>
@@ -299,3 +318,11 @@ Maven配置文件pom.xml:
 </project>
 ```
 至此，整个项目的代码结束。
+
+**【作者简介】**：  
+秦怀，公众号【**秦怀杂货店**】作者，技术之路不在一时，山高水长，纵使缓慢，驰而不息。这个世界希望一切都很快，更快，但是我希望自己能走好每一步，写好每一篇文章，期待和你们一起交流。
+
+此文章仅代表自己（本菜鸟）学习积累记录，或者学习笔记，如有侵权，请联系作者核实删除。人无完人，文章也一样，文笔稚嫩，在下不才，勿喷，如果有错误之处，还望指出，感激不尽~ 
+
+
+![](https://markdownpicture.oss-cn-qingdao.aliyuncs.com/blog/20201012000828.png)

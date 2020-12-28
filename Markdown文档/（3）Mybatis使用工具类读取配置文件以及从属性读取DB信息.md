@@ -1,6 +1,6 @@
 #### 1.使用工具类获取sqlSession实例对象
 在上一个demo中，处理了多个namespace的问题，那么我们可以看到代码还是会有一定的冗余，比如下面这段代码中我们每一个增删改查操作都需要读取一遍配置文件：
-```
+``` java
 public class StudentDaoImpl implements IStudentDao {
     private SqlSession sqlSession;
 	public void insertStu(Student student) {
@@ -22,7 +22,7 @@ public class StudentDaoImpl implements IStudentDao {
 }
 ```
 我们的思路应该是写一个工具类来替我们获取配置文件的信息，只要返回一个sqlSession实例就可以了。所以就有了MyBatisUtils.class,下面这样的方式，只要使用`sqlSession=MyBatisUtils.getSqlSession();`就可以获取到sqlsession的实例。
-```
+```java
 public class MyBatisUtils {
     public SqlSession getSqlSession(){
         InputStream is;
@@ -59,15 +59,16 @@ public class MyBatisUtils {
 }
 ```
 使用的时候只需要获取即可
-```
+```java
 sqlSession=MyBatisUtils.getSqlSession();
 ```
 #### 2.DB配置改造成读取配置文件
-现在我们需要将DB使用配置文件读取，不是用xml配置，很多人会问，为什么这样做，有人可能会回答是因为改动的时候容易改，但是xml改动的时候不是挺容易改么？<br>
+现在我们需要将DB使用配置文件读取，不是用xml配置，很多人会问，为什么这样做，有人可能会回答是因为改动的时候容易改，但是xml改动的时候不是挺容易改么？
+
 其实，写到属性文件的原因与上面的一样，就是为了更好改，要是上线了需要该数据库我们只需要改动`<properties  resource="jdbc_mysql.properties">`这一个地方就可以了，xml文件就变得更加简洁清晰了。
 
 原来在mybatis.xml文件里配置的是：
-``` 
+``` java
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -97,14 +98,17 @@ sqlSession=MyBatisUtils.getSqlSession();
   </configuration>
 ```
 现在我们定义一个jdbc-mysql.properties文件，将数据库连接的属性直接写进属性文件里(我们可以有好几个不一样的.properties文件,配置着不同的数据库)：
-```
+
+``` java
 jdbc.driver=com.mysql.jdbc.Driver
-jdbc.url=jdbc:mysql://localhost:3306/test
+jdbc.url=jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&serverTimezone=UTC
 jdbc.user=root
 jdbc.password=123456
 ```
+
 将mybatis.xml改造成(注意下面需要配置属性文件，然后才能在environment标签里面使用，直接使用key就可以了，属性文件配置是按照key-value的模式配置的)：
-```
+
+``` java
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -134,3 +138,11 @@ jdbc.password=123456
   		</mappers>
   </configuration>
 ```
+
+**【作者简介】**：  
+秦怀，公众号【**秦怀杂货店**】作者，技术之路不在一时，山高水长，纵使缓慢，驰而不息。这个世界希望一切都很快，更快，但是我希望自己能走好每一步，写好每一篇文章，期待和你们一起交流。
+
+此文章仅代表自己（本菜鸟）学习积累记录，或者学习笔记，如有侵权，请联系作者核实删除。人无完人，文章也一样，文笔稚嫩，在下不才，勿喷，如果有错误之处，还望指出，感激不尽~ 
+
+
+![](https://markdownpicture.oss-cn-qingdao.aliyuncs.com/blog/20201012000828.png)

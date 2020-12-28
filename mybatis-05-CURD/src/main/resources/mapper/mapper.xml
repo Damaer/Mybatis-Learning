@@ -28,13 +28,17 @@
         </selectKey>
     </insert>
 
-    <insert id="insertStudentCacheId" parameterType="Student">
+    <insert id="insertStudentCacheId" useGeneratedKeys="true" keyProperty="id" parameterType="Student">
         insert into student(name,age,score) values(#{name},#{age},#{score})
-        <!-- 指定结果类型resultType，keyProperty是属性，自动返回到属性id中，order是次序，after是指获取id是在于插入后 -->
+    </insert>
+
+    <!--<insert id="insertStudentCacheId" parameterType="Student">
+        insert into student(name,age,score) values(#{name},#{age},#{score})
+        &lt;!&ndash; 指定结果类型resultType，keyProperty是属性，自动返回到属性id中，order是次序，after是指获取id是在于插入后 &ndash;&gt;
         <selectKey resultType="int" keyProperty="id" order="AFTER">
             select LAST_INSERT_ID()
         </selectKey>
-    </insert>
+    </insert>-->
 
     <!-- 删除 -->
     <delete id="deleteStudentById">

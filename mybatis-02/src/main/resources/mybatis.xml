@@ -5,28 +5,28 @@
   <configuration>
   		<!-- 配置运行环境 -->
   		<!-- default 表示默认使用哪一个环境，可以配置多个，比如开发时的测试环境，上线后的正式环境等 -->
-  		<environments default="mysqlEM">
-  			<environment id="mysqlEM">
-  				<transactionManager type="JDBC">		
-  				</transactionManager>
-  				<dataSource type="POOLED">
-  					<property name="driver" value="com.mysql.jdbc.Driver"/>
-  					<property name="url" value="jdbc:mysql://127.0.0.1:3306/test"/>
-  					<property name="username" value="root"/>
-  					<property name="password" value="123456"/>
-  				</dataSource>
-  			</environment>
-  			<environment id="testEM">
-  				<transactionManager type="JDBC">
-  				</transactionManager>
-  				<dataSource type="POOLED">
-  					<property name="driver" value="com.mysql.jdbc.Driver"/>
-  					<property name="url" value="jdbc:mysql://127.0.0.1:3306/test"/>
-  					<property name="username" value="root"/>
-  					<property name="password" value="123456"/>
-  				</dataSource>
-  			</environment>
-  		</environments>
+	<environments default="mysqlEM">
+		<environment id="mysqlEM">
+			<transactionManager type="JDBC">
+			</transactionManager>
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver"/>
+				<property name="url" value="jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8&amp;serverTimezone=UTC"/>
+				<property name="username" value="root"/>
+				<property name="password" value="123456"/>
+			</dataSource>
+		</environment>
+		<environment id="testEM">
+			<transactionManager type="JDBC">
+			</transactionManager>
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver"/>
+				<property name="url" value="jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8&amp;serverTimezone=UTC"/>
+				<property name="username" value="root"/>
+				<property name="password" value="123456"/>
+			</dataSource>
+		</environment>
+	</environments>
   		<!-- 注册映射文件 -->
   		<mappers>
   			<mapper resource="mapper/mapper1.xml"/>
