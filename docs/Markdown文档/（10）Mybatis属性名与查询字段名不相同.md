@@ -57,7 +57,7 @@ public class Student {
 }
 ```
 pom.xml:
-``` xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -78,13 +78,13 @@ pom.xml:
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.21</version>
+            <version>5.1.29</version>
         </dependency>
         <!-- junit测试包 -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.1</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
         <!-- 日志文件管理包 -->
@@ -144,14 +144,14 @@ pom.xml:
 </configuration>
 ```
 数据库配置文件(jdbc_mysql.properties)：
-``` yaml
+```
 jdbc.driver=com.mysql.jdbc.Driver
-jdbc.url=jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&serverTimezone=UTC
+jdbc.url=jdbc:mysql://localhost:3306/test
 jdbc.user=root
 jdbc.password=123456
 ```
 日志配置文件 log4j.prperties:
-``` yaml
+```
 log4j.prpp
 log4j.rootLogger=DEBUG, stdout
 
@@ -163,7 +163,7 @@ log4j.logger.java.sql.PreparedStatement = debug
 log4j.logger.java.sql.ResultSet =debug
 ```
 使用到的工具类（MyBatisUtils.java）：
-``` java
+```
 public class MyBatisUtils {
     static private SqlSessionFactory sqlSessionFactory;
 
@@ -185,7 +185,7 @@ public class MyBatisUtils {
 
 ```
 接口定义（IStudentDao.java）：
-``` java
+```
 public interface IStudentDao {
     // 返回所有学生的信息List
     public List<Student> selectAllStudents();
@@ -194,7 +194,7 @@ public interface IStudentDao {
 }
 ```
 接口实现类(StudentDaoImpl.class)：
-``` java
+```
 public class StudentDaoImpl implements IStudentDao {
     private SqlSession sqlSession;
     public List<Student> selectAllStudents() {
@@ -228,7 +228,7 @@ public class StudentDaoImpl implements IStudentDao {
 ```
 **最主要的mapper文件：**<br>
 可以直接使用别名：
-``` xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -243,7 +243,7 @@ public class StudentDaoImpl implements IStudentDao {
 </mapper>
 ```
 或者可以自己定义映射：
-``` xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -310,11 +310,3 @@ public class MyTest {
 }
 
 ```
-
-**【作者简介】**：  
-秦怀，公众号【**秦怀杂货店**】作者，技术之路不在一时，山高水长，纵使缓慢，驰而不息。这个世界希望一切都很快，更快，但是我希望自己能走好每一步，写好每一篇文章，期待和你们一起交流。
-
-此文章仅代表自己（本菜鸟）学习积累记录，或者学习笔记，如有侵权，请联系作者核实删除。人无完人，文章也一样，文笔稚嫩，在下不才，勿喷，如果有错误之处，还望指出，感激不尽~ 
-
-
-![](https://markdownpicture.oss-cn-qingdao.aliyuncs.com/blog/20201012000828.png)

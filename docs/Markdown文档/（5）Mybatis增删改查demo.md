@@ -1,23 +1,14 @@
-前面我们学会了`Mybatis`如何配置数据库以及创建`SqlSession`，那怎么写呢？crud怎么写？
-
-> 代码直接放在Github仓库【https://github.com/Damaer/Mybatis-Learning/tree/master/mybatis-05-CURD 】  
-需要声明的是：此`Mybatis`学习笔记，是从原始的`Mybatis`开始的，而不是整合了其他框架（比如`Spring`）之后，个人认为，这样能对它的功能，它能帮我们做什么，有更好的理解，后面再慢慢叠加其他的功能。
-
-
-项目的目录如下：
-![](http://markdownpicture.oss-cn-qingdao.aliyuncs.com/18-6-24/75658392.jpg)
-
-创建数据库：初始化数据，SQL语句如下（也就是`resource`下的`test.sql`）
-```sql
+首先，项目的目录如下：<br>![](http://markdownpicture.oss-cn-qingdao.aliyuncs.com/18-6-24/75658392.jpg)<br>
+首先，我们的数据库mysql，SQL语句如下（也就是resource下的test.sql）
+```
 #创建数据库
 CREATE DATABASE `test` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 #创建数据表
 CREATE TABLE `student` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(20) NOT NULL ,
 `age` INT NOT NULL , `score` DOUBLE NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
 ```
-
-使用`maven`管理项目，`pom.xml`文件管理依赖`jar`包：
-```xml
+maven管理项目，pom.xml文件管理依赖jar包：
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -38,13 +29,13 @@ CREATE TABLE `student` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(20) N
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.21</version>
+            <version>5.1.29</version>
         </dependency>
         <!-- junit测试包 -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.1</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
         <!-- 日志文件管理包 -->
@@ -66,8 +57,7 @@ CREATE TABLE `student` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(20) N
     </dependencies>
 </project>
 ```
-
-与数据库中相对应的实体类`Student`:
+既然数据库中有实体类，那我们也需要实体类Student:
 ``` java
 package bean;
 
@@ -117,8 +107,8 @@ public class Student {
 	
 }
 ```
-使用`mybatis`的重要一步是配置数据源，要不怎么知道使用哪一个数据库，有哪些mapper文件,主配置文件 `mybatis.xml`：
-``` xml
+使用mybatis的重要一步是配置，要不怎么知道使用哪一个数据库，有哪些mapper文件,主配置文件 mybatis.xml：
+``` java
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -154,17 +144,15 @@ public class Student {
     </mappers>
 </configuration>
 ```
-
-`mybatis.xml`文件里面抽取出来的数据库连接相关信息`jdbc_mysql.properties`文件:
-```yaml
+jdbc_mysql.properties文件:
+```
 jdbc.driver=com.mysql.jdbc.Driver
-jdbc.url=<version>8.0.21</version>
+jdbc.url=jdbc:mysql://localhost:3306/test
 jdbc.user=root
 jdbc.password=123456
 ```
-
-日志系统的配置文件 `log4j.properties`:
-``` yaml
+日志系统的配置文件 log4j.properties:
+``` 
 log4j.prpp
 log4j.rootLogger=DEBUG, stdout
 
@@ -186,9 +174,8 @@ log4j.logger.java.sql.Statement = debug
 log4j.logger.java.sql.PreparedStatement = debug
 log4j.logger.java.sql.ResultSet =debug
 ```
-
-在主配置文件`mybatis.xml`里我们配置了去扫描`mapper`文件，那我们要实现的是对`Student`的增删改查等功能，`Mapper.xml`:
-```xml
+在主配置文件里我们配置了去扫描mapper文件，那我们要实现的是对Student的增删改查等功能，Mapper.xml:
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -241,8 +228,8 @@ log4j.logger.java.sql.ResultSet =debug
     </select>
 </mapper>
 ```
-有了`mapper.xml`文件还不够，我们需要定义接口与`sql`语句一一对应,`IStudentDao.class`：
-``` java
+有了mapper文件还不够，我们需要定义接口与sql语句一一对应,IStudentDao.class：
+```
 package dao;
 import bean.Student;
 import java.util.List;
@@ -270,14 +257,7 @@ public interface IStudentDao {
 }
 ```
 接口的实现类如下：
-`sqlSession`有很多方法:
-- 如果是插入一条数据需要使用`insert()`;
-- 删除一条数据使用`delete()`;
-- 更新一条数据使用`update()`;
-- 如果查询返回数据的`List`使用`SelectList()`方法；
-- 如果返回查询多条数据的`Map`使用`selectMap()`;
-- 如果查询一条数据，那么只需要使用`selectOne()`即可。
-
+sqlSession有很多方法，如果是插入一条数据需要使用insert();删除一条数据使用delete();更新一条数据使用update();如果查询返回数据的List使用SelectList()方法；如果返回查询多条数据的Map使用selectMap();如果查询一条数据，那么只需要使用selectOne()即可。
 ``` java
 package dao;
 
@@ -401,7 +381,7 @@ public class StudentDaoImpl implements IStudentDao {
     }
 }
 ```
-我们使用了一个自己定义的工具类，用来获取`Sqlsession`的实例：
+在这里我们使用了一个自己定义的工具类，用来获取Sqlsession的实例：
 ``` java
 package utils;
 
@@ -433,7 +413,7 @@ public class MyBatisUtils {
 }
 
 ```
-测试代码`MyTest.class`:
+测试代码MyTest.class:
 ``` java
 import bean.Student;
 import dao.IStudentDao;
@@ -541,21 +521,4 @@ public class MyTest {
 }
 
 ```
-至此这个demo就完成了，运行test的时候建议多跑几次插入再测其他功能。
-
-从上面的代码我们可以看出Mybatis总体运行的逻辑：
-- 1.通过加载`mybatis.xml`文件，然后解析文件，获取数据库连接信息，存起来。
-- 2.扫描`mybatis.xml`里面配置的`mapper.xml`文件。
-- 3.扫描`mapper.xml`文件的时候，，将`sql`按照`namespace`和`id`存起来。
-- 4.通过刚刚存起来的数据库连接信息，build出一个`sqlSessionFactory`工厂,`sqlSessionFactory`又可以获取到`openSession`，相当于获取到数据库会话。
-- 5.通过`SqlSession`的`insert()`，`update()`,`delete()`等方法，里面传入`id`和参数，就可以查找到刚刚扫描`mapper.xml`文件时存起来的sql，去执行sql。
-
-![](https://markdownpicture.oss-cn-qingdao.aliyuncs.com/blog/20201204231614.png)
-
-**【作者简介】**：  
-秦怀，公众号【**秦怀杂货店**】作者，技术之路不在一时，山高水长，纵使缓慢，驰而不息。这个世界希望一切都很快，更快，但是我希望自己能走好每一步，写好每一篇文章，期待和你们一起交流。
-
-此文章仅代表自己（本菜鸟）学习积累记录，或者学习笔记，如有侵权，请联系作者核实删除。人无完人，文章也一样，文笔稚嫩，在下不才，勿喷，如果有错误之处，还望指出，感激不尽~ 
-
-
-![](https://markdownpicture.oss-cn-qingdao.aliyuncs.com/blog/20201012000828.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+至此这个demo就完成了，运行test的时候建议多跑几次插入再测试其他功能。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

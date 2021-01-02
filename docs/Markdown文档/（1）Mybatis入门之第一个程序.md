@@ -64,13 +64,13 @@ CREATE TABLE `student` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(20) N
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.21</version>
+            <version>5.1.29</version>
         </dependency>
         <!-- junit测试包 -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.1</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
         <!-- 日志文件管理包 -->
@@ -321,11 +321,5 @@ public class MyTest {
 5.提交会话，`commit`,不一定需要，具体看数据库的类型.  
 6.关闭会话,`sqlSession.close();`。
 
-**【作者简介】**：  
-秦怀，公众号【**秦怀杂货店**】作者，技术之路不在一时，山高水长，纵使缓慢，驰而不息。这个世界希望一切都很快，更快，但是我希望自己能走好每一步，写好每一篇文章，期待和你们一起交流。
 
-此文章仅代表自己（本菜鸟）学习积累记录，或者学习笔记，如有侵权，请联系作者核实删除。人无完人，文章也一样，文笔稚嫩，在下不才，勿喷，如果有错误之处，还望指出，感激不尽~ 
-
-
-![](https://markdownpicture.oss-cn-qingdao.aliyuncs.com/blog/20201012000828.png)
 

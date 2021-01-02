@@ -21,7 +21,6 @@ public class MyTest {
          * 要是没有select id，这样是不会自动获取id的，id会一直为空
          */
         Student student=new Student("hello",14,94.6);
-        student.setId(1);
         System.out.println("插入前：student="+student);
         dao.insertStudent(student);
         System.out.println("插入后：student="+student);

@@ -1,5 +1,3 @@
-代码直接放在Github仓库【https://github.com/Damaer/Mybatis-Learning】，mybatis-02可直接运行，就不占篇幅了。
-
 为什么我们有时候不使用commit也能修改数据库成功？
 
 [TOC]
@@ -92,11 +90,3 @@ public class StudentDaoImpl implements IStudentDao {
 下面是我把commit去掉，但是留下close的结果，我们可以看到没有commit，但是已经会自动rollback了，所以只要使用`sqlsession.close()`就会自动回滚再关闭。
 
 ![](http://markdownpicture.oss-cn-qingdao.aliyuncs.com/18-6-2/80015665.jpg)
-
-**【作者简介】**：  
-秦怀，公众号【**秦怀杂货店**】作者，技术之路不在一时，山高水长，纵使缓慢，驰而不息。这个世界希望一切都很快，更快，但是我希望自己能走好每一步，写好每一篇文章，期待和你们一起交流。
-
-此文章仅代表自己（本菜鸟）学习积累记录，或者学习笔记，如有侵权，请联系作者核实删除。人无完人，文章也一样，文笔稚嫩，在下不才，勿喷，如果有错误之处，还望指出，感激不尽~ 
-
-
-![](https://markdownpicture.oss-cn-qingdao.aliyuncs.com/blog/20201012000828.png)
